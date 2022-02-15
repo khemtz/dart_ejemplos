@@ -5,10 +5,14 @@ void main() {
   var respuesta = stdin.readLineSync();
   int total = int.parse(respuesta.toString());
 
-  print("---------------------------------");
-  for (int ren = 0; ren < total; ren++) {
-    for (int col = 0; col < (total - ren); col++) {
-      stdout.write("*");
+  //print("---------------------------------");
+  for (int ren = 1; ren <= total; ren++) {
+    for (int col = 0; col < total; col++) {
+      if (col < (total - ren)) {
+        stdout.write("-");
+      } else {
+        stdout.write("*");
+      }
     }
     stdout.write("\n");
   }
