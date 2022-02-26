@@ -82,7 +82,7 @@ void calculoMes2(int numero) {
 
 void calculoMes3(int i) {
   var arrMes = [
-    'enero',
+    'enero', //<----posicion 0
     'febrero',
     'marzo',
     'abril',
@@ -93,7 +93,7 @@ void calculoMes3(int i) {
     'septiembre',
     'octubre',
     'noviembre',
-    'diciembre'
+    'diciembre' //<------posicion 11
   ];
   print("el mes es " + arrMes[i - 1]);
 }
@@ -106,7 +106,7 @@ void calculoMes4(int i) {
     4: 'Abril',
     5: 'Mayo',
     6: 'Junio',
-    7: 'Julio',
+    7: 'Julio', //<------mapMes[7]
     8: 'Agosto',
     9: 'Septiembre',
     10: 'Octubre',
